@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="nav">
+            <div class="nav-title">Sign-up Page</div>
+            <div class="nav-menu">
+                <ul class="nav-items">
+                    <li><a class="items" href="index.html">Home</a></li>
+                    <li><a class="items  active-tab" href="#">Sign Up</a></li>
+                    <li><a class="items" href="demo.html">Demo</a></li>
+                </ul>
+            </div>
+            <div class="toggle" onclick="showMenu()">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <div class="toggle-close" onclick="hideMenu()">
+                <i class="fa fa-close"></i>
+            </div>
+        </div>
+
+        <div class="container-sign-up">
+            <div class="form-container">
+                <div class="form-title"><span class="main-title">Sign Up Form</span><span class="sub-title">Please fill in this form to create an account!</span></div>
+                <form class="form-content" onsubmit="submitForm(event)">
+                    <div class="form-label">Full Name:</div>
+                    <div class="form-input"><span class="fa fa-user icon-container"></span><input type="text" class="input-text" placeholder="Full Name" required></div>
+                    <div class="form-label">Address line 1:</div>
+                    <div class="form-input"><span class="fa fa-address-card-o icon-container"></span><input type="text" class="input-text" placeholder="Address line 1" required></div>
+                    <div class="form-label">Address line 2:</div>
+                    <div class="form-input"><span class="fa fa-address-card-o icon-container"></span><input type="text" class="input-text" placeholder="Address line 2" required></div>
+                    <div class="form-label">City:</div>
+                    <div class="form-input"><span class="fa fa-list-alt icon-container"></span><input type="text" class="input-text" placeholder="City" required></div>
+                    <div class="form-label">State/Provience/Region:</div>
+                    <div class="form-input"><span class="fa fa-map-marker icon-container"></span><input type="text" class="input-text" placeholder="State/Provience/Region" required></div>
+                    <div class="form-label">Postal Code/Zip:</div>
+                    <div class="form-input"><span class="fa fa-envelope-o icon-container"></span><input type="number" class="input-text" placeholder="Postal Code/Zip" required></div>
+                    <div class="form-label">Country:</div>
+                    <div class="form-input"><span class="fa fa-globe icon-container"></span><input type="text" class="input-text" placeholder="Country" required></div>
+                    <div class="form-label">Email:</div>
+                    <div class="form-input"><span class="fa fa-envelope-o icon-container"></span><input type="email" class="input-text" placeholder="Email" required></div>
+                    <div class="form-label">Phone no:</div>
+                    <div class="form-input"><span class="fa fa-mobile icon-container"></span><input type="number" class="input-text" placeholder="Phone" required></div>
+                    <div class="submit-btn"> <input class="button" type="submit" value="Submit"> </div>
+                </form>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
